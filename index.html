@@ -14,24 +14,28 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
-        .container {
+        /* Container styling */
+        body > * {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        .title {
+        /* Title styling */
+        body > * > h1 {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 16px;
         }
-        .text {
+        /* Text styling */
+        body > * > p {
             font-size: 16px;
             color: #333333;
             margin-bottom: 16px;
         }
-        .btn {
+        /* Button styling */
+        body > * > a {
             background-color: #3498db;
             color: #ffffff;
             padding: 10px 20px;
@@ -40,17 +44,17 @@
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            text-decoration: none;
         }
-        .btn:hover {
+        /* Button hover effect */
+        body > * > a:hover {
             background-color: #2980b9;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Bussin.Napture</h1>
-        <p class="text">Bussin Napture is a web browser made by FaceDev (face-hh)</p>
-        <a href="https://www.youtube.com/watch?v=qiOtinFFfk8" class="btn">Learn More</a>
-    </div>
+    <h1>Welcome to Bussin Napture!</h1>
+    <p>This is a basic HTML page styled for simplicity.</p>
+    <a href="#">Learn More</a>
 </body>
 </html>

@@ -15,27 +15,48 @@
             font-family: Arial, sans-serif;
         }
         /* Container styling */
-        body > * {
+        .container {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            max-width: 400px;
+            width: 100%;
         }
         /* Title styling */
-        body > * > h1 {
+        .container h1 {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 16px;
         }
         /* Text styling */
-        body > * > p {
+        .container p {
             font-size: 16px;
             color: #333333;
             margin-bottom: 16px;
         }
+        /* Form styling */
+        .form-group {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .form-group select, .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
         /* Button styling */
-        body > * > a {
+        .container .btn {
             background-color: #3498db;
             color: #ffffff;
             padding: 10px 20px;
@@ -45,16 +66,35 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             text-decoration: none;
+            margin-right: 8px;
         }
         /* Button hover effect */
-        body > * > a:hover {
+        .container .btn:hover {
             background-color: #2980b9;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Bussin Napture!</h1>
-    <p>This is a basic HTML page styled for simplicity.</p>
-    <a href="#">Learn More</a>
+    <div class="container">
+        <h1>Welcome to Bussin Napture!</h1>
+        <p>This is a basic HTML page styled for simplicity.</p>
+        
+        <div class="form-group">
+            <label for="dropdown">Select an option:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="textbox">Enter text:</label>
+            <input type="text" id="textbox" name="textbox" placeholder="Type something...">
+        </div>
+        
+        <a href="#" class="btn">Button 1</a>
+        <a href="#" class="btn">Button 2</a>
+    </div>
 </body>
 </html>
